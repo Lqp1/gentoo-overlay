@@ -22,11 +22,11 @@ DEPEND="net-wireless/wpa_supplicant[p2p]
 		media-plugins/gst-plugins-x264
 		media-libs/gst-plugins-ugly
 		media-libs/gst-plugins-good
-		media-libs/gst-plugins-bad"
-RDEPEND="${DEPEND}"
-BDEPEND="dev-lang/vala
+		media-libs/gst-plugins-bad
 		systemd? ( >=sys-auth/systemd-221 )
 		!systemd? ( >=sys-auth/elogind-221 )"
+RDEPEND="${DEPEND}"
+BDEPEND="dev-lang/vala"
 
 
 CMAKE_MAKEFILE_GENERATOR="emake"
