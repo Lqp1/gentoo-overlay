@@ -18,6 +18,8 @@ DEPEND="net-wireless/wpa_supplicant[p2p]
 		net-wireless/iw
 		virtual/udev
 		media-plugins/gst-plugins-libav
+		media-plugins/gst-plugins-ximagesrc
+		media-plugins/gst-plugins-x264
 		media-libs/gst-plugins-ugly
 		media-libs/gst-plugins-good
 		media-libs/gst-plugins-bad"
