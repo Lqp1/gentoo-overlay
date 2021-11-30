@@ -23,7 +23,7 @@ DEPEND="net-wireless/wpa_supplicant[p2p]
 		media-libs/gst-plugins-ugly
 		media-libs/gst-plugins-good
 		media-libs/gst-plugins-bad
-		systemd? ( >=sys-auth/systemd-221 )
+		systemd? ( >=sys-apps/systemd-221 )
 		!systemd? ( >=sys-auth/elogind-221 )"
 RDEPEND="${DEPEND}"
 BDEPEND="dev-lang/vala"
