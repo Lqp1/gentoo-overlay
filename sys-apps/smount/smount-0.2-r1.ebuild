@@ -3,7 +3,7 @@
 
 EAPI=7
 
-DESCRIPTION="Simple Live EBUILD for smount tool"
+DESCRIPTION="Smount tool is a tool to manage several mountpoints from CLI"
 HOMEPAGE="https://github.com/lqp1/smount"
 
 LICENSE="GPL-3"
@@ -13,16 +13,12 @@ IUSE=""
 
 DEPEND="dev-python/pyyaml"
 RDEPEND="${DEPEND}"
-BDEPEND="dev-vcs/git"
 
-SRC_URI=""
-EGIT_REPO_URI="https://github.com/lqp1/${PN}.git"
-EGIT_BRANCH="main"
-EGIT_CHECKOUT_DIR="${S}"
+SRC_URI="https://github.com/lqp1/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 PYTHON_COMPAT=( python3_8 python3_9 )
 
-inherit git-r3 distutils-r1
+inherit distutils-r1
 
 python_install_all(){
 	distutils-r1_python_install_all
