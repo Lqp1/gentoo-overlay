@@ -20,7 +20,7 @@ EGIT_REPO_URI="https://github.com/lqp1/${PN}.git"
 EGIT_BRANCH="main"
 EGIT_CHECKOUT_DIR="${S}"
 
-PYTHON_COMPAT=( python3_8 python3_9 )
+PYTHON_COMPAT=( python3_8 python3_9 python3_10 )
 
 inherit git-r3 distutils-r1
 

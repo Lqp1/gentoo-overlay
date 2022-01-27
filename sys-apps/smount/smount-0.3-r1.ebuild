@@ -11,12 +11,12 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-DEPEND=""
+DEPEND="dev-python/pyyaml"
 RDEPEND="${DEPEND}"
 
 SRC_URI="https://github.com/lqp1/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
-PYTHON_COMPAT=( python3_8 )
+PYTHON_COMPAT=( python3_8 python3_9 python3_10 )
 
 inherit distutils-r1
 
