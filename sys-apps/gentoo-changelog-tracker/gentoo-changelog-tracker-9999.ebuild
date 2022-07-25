@@ -6,8 +6,9 @@ EAPI=7
 DESCRIPTION="Simple Live EBUILD for Gentoo-changelog-tracker"
 HOMEPAGE="https://github.com/lqp1/gentoo-changelog-tracker"
 EGO_PN="github.com/lqp1/gentoo-changelog-tracker"
+EGIT_REPO_URI="https://${EGO_PN}.git"
 
-inherit golang-vcs golang-build
+inherit go-module git-r3
 
 KEYWORDS="~amd64"
 LICENSE="GPL-3"
@@ -17,13 +18,15 @@ IUSE=""
 DEPEND="app-portage/eix"
 RDEPEND="${DEPEND}"
 
-src_prepare() {
-	# Ugly hack to bring all dependencies when building go sources
-	cp -vr "${EGO_STORE_DIR}/src/" "${WORKDIR}/${P}/"
-	default
+src_unpack() {
+	git-r3_src_unpack
+	go-module_live_vendor
+}
+
+src_compile() {
+	go build . || die
 }
 
 src_install(){
-	# Not sure why this is not detected properly ?
-	dobin gentoo-changelog-tracker
+	dobin ${PN}
 }
