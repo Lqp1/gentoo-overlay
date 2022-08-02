@@ -13,7 +13,7 @@ For example, with this kind of file in `/etc/portage/repos.conf`:
 [lqp1]
 location = /var/db/repos/lqp1
 sync-type = git
-sync-uri = git://github.com/lqp1/gentoo-overlay.git
+sync-uri = https://github.com/lqp1/gentoo-overlay
 auto-sync = yes
 ```
 
