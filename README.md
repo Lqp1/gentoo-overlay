@@ -23,7 +23,10 @@ auto-sync = yes
 # to update this overlay only
 $ sudo emaint sync -r lqp1
 
-# to update a manifest
-$ repoman manifest
+# to update a manifest and push
+$ pkgdev manifest
+$ git add ...
+$ pkgdev commit
+$ pkgdev push -n
 
 ```
