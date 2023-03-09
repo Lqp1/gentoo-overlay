@@ -8,7 +8,7 @@ HOMEPAGE="https://github.com/lqp1/smount"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS=""
 IUSE=""
 
 DEPEND="dev-python/pyyaml"
@@ -20,7 +20,8 @@ EGIT_REPO_URI="https://github.com/lqp1/${PN}.git"
 EGIT_BRANCH="main"
 EGIT_CHECKOUT_DIR="${S}"
 
-PYTHON_COMPAT=( python3_8 python3_9 python3_10 )
+DISTUTILS_USE_PEP517=setuptools
+PYTHON_COMPAT=( python3_{9,10,11} )
 
 inherit git-r3 distutils-r1
 

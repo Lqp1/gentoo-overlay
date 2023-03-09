@@ -16,7 +16,8 @@ RDEPEND="${DEPEND}"
 
 SRC_URI="https://github.com/lqp1/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
-PYTHON_COMPAT=( python3_9 python3_10 )
+DISTUTILS_USE_PEP517=setuptools
+PYTHON_COMPAT=( python3_{9,10,11} )
 
 inherit distutils-r1
 
