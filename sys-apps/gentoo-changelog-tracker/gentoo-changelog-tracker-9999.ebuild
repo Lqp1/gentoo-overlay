@@ -10,7 +10,7 @@ EGIT_REPO_URI="https://${EGO_PN}.git"
 
 inherit go-module git-r3
 
-KEYWORDS="~amd64"
+KEYWORDS=""
 LICENSE="GPL-3"
 SLOT="0"
 IUSE=""
