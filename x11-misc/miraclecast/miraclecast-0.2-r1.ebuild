@@ -3,8 +3,6 @@
 
 EAPI=7
 
-inherit cmake-utils
-
 DESCRIPTION="(fork) Connect external monitors to your system via Wifi-Display specification"
 HOMEPAGE="https://github.com/Lqp1/miraclecast"
 SRC_URI="https://github.com/Lqp1/miraclecast/archive/v${PV}.tar.gz"
@@ -28,17 +26,13 @@ DEPEND="net-wireless/wpa_supplicant[p2p]
 RDEPEND="${DEPEND}"
 BDEPEND="dev-lang/vala"
 
-
 CMAKE_MAKEFILE_GENERATOR="emake"
 
-src_prepare() {
-	cmake-utils_src_prepare
-}
-
+inherit cmake
 
 src_configure() {
 	local mycmakeargs=(
 	-DENABLE_SYSTEMD="$(usex systemd)"
-    )
-	cmake-utils_src_configure
+	)
+	cmake_src_configure
 }

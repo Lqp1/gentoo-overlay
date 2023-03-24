@@ -1,0 +1,15 @@
+BDEPEND=dev-lang/vala sys-devel/make >=dev-util/cmake-3.20.5
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=net-wireless/wpa_supplicant[p2p] net-wireless/iw virtual/udev media-plugins/gst-plugins-libav media-plugins/gst-plugins-ximagesrc media-plugins/gst-plugins-x264 media-libs/gst-plugins-ugly media-libs/gst-plugins-good media-libs/gst-plugins-bad systemd? ( >=sys-apps/systemd-221 ) !systemd? ( >=sys-auth/elogind-221 )
+DESCRIPTION=(fork) Connect external monitors to your system via Wifi-Display specification
+EAPI=7
+HOMEPAGE=https://github.com/Lqp1/miraclecast
+INHERIT=cmake
+IUSE=systemd
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=net-wireless/wpa_supplicant[p2p] net-wireless/iw virtual/udev media-plugins/gst-plugins-libav media-plugins/gst-plugins-ximagesrc media-plugins/gst-plugins-x264 media-libs/gst-plugins-ugly media-libs/gst-plugins-good media-libs/gst-plugins-bad systemd? ( >=sys-apps/systemd-221 ) !systemd? ( >=sys-auth/elogind-221 )
+SLOT=0
+SRC_URI=https://github.com/Lqp1/miraclecast/archive/v0.2.tar.gz
+_eclasses_=toolchain-funcs	6001248ef162a5fa2a21ce132a212f6b	multilib	5ca4e49abed8e3a2f7b56920eadee157	edos2unix	33e347e171066657f91f8b0c72ec8773	strip-linguas	ac3ee41ee2d31d8c41a77c0838320cc7	wrapper	4a1902f969e5718126434fc35f3a0d9c	eutils	8f942ebdcf04334697649d4a0bf65a32	flag-o-matic	69394e25812406faa1f90edaf4969395	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	38c85b725d0467e51954ea921b6c104b	xdg-utils	ac0e315a3688929e34ac75b139e7349a	cmake	2e47edc2986d4e1c0363867058cd4489
+_md5_=5721f2dbd36a23df287a94d129369854
