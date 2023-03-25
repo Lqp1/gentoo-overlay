@@ -26,6 +26,7 @@ $ sudo emaint sync -r lqp1
 # to update a manifest and push
 $ pkgdev manifest
 $ git add ...
+$ ebuild xxxx clean test install
 $ pkgdev commit
 $ pkgdev push -n
 
