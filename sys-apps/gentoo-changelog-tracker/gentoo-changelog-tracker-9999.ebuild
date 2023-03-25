@@ -29,5 +29,5 @@ src_compile() {
 
 src_install(){
 	dobin ${PN}
-	newbashcomp sh/gentoo-changelog-tracker-completion.bash gentoo-changelog-tracker-completion.bash
+	newbashcomp sh/${PN}-completion.bash ${PN}
 }

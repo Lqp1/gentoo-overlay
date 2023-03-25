@@ -27,6 +27,6 @@ inherit git-r3 distutils-r1 bash-completion-r1
 
 python_install_all(){
 	distutils-r1_python_install_all
-	newbashcomp debian/checkperms-bin-completion.bash checkperms-bin-completion.bash
+	newbashcomp debian/${PN}-bin-completion.bash ${PN}
 	doman debian/docs/*.1
 }
