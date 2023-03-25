@@ -8,7 +8,7 @@ HOMEPAGE="https://github.com/lqp1/gentoo-changelog-tracker"
 EGO_PN="github.com/lqp1/gentoo-changelog-tracker"
 EGIT_REPO_URI="https://${EGO_PN}.git"
 
-inherit go-module git-r3
+inherit go-module git-r3 bash-completion-r1
 
 KEYWORDS=""
 LICENSE="GPL-3"
@@ -29,4 +29,5 @@ src_compile() {
 
 src_install(){
 	dobin ${PN}
+    newbashcomp sh/gentoo-changelog-tracker-completion.bash gentoo-changelog-tracker-completion.bash
 }
