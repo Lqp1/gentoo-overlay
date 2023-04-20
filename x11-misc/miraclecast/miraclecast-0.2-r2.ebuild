@@ -7,7 +7,7 @@ DESCRIPTION="(fork) Connect external monitors to your system via Wifi-Display sp
 HOMEPAGE="https://github.com/Lqp1/miraclecast"
 SRC_URI="https://github.com/Lqp1/miraclecast/archive/v${PV}.tar.gz"
 
-LICENSE="GPL-2"
+LICENSE="LGPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="systemd"
@@ -36,3 +36,5 @@ src_configure() {
 	)
 	cmake_src_configure
 }
+
+DOCS="COPYING NEWS README.md LICENSE_lgpl LICENSE_htable LICENSE_gdhcp"
