@@ -13,6 +13,9 @@ IUSE=""
 
 DEPEND="dev-python/pyyaml"
 RDEPEND="${DEPEND}"
+BDEPEND="
+	test? ( dev-python/pyfakefs )
+"
 
 SRC_URI="https://github.com/lqp1/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
@@ -21,6 +24,10 @@ PYTHON_COMPAT=( python3_{9,10,11} )
 
 inherit distutils-r1
 
+distutils_enable_tests pytest
+
 python_install_all(){
 	distutils-r1_python_install_all
 }
+
+DOCS="README.md"
