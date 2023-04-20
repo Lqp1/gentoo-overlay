@@ -24,3 +24,5 @@ inherit distutils-r1
 python_install_all(){
 	distutils-r1_python_install_all
 }
+
+DOCS="CHANGELOG.md README.md"
