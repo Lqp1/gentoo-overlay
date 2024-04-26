@@ -1,14 +1,14 @@
-BDEPEND=>=dev-lang/go-1.18 app-arch/unzip >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=>=dev-lang/go-1.20:= app-arch/unzip >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile install unpack
 DEPEND=app-portage/eix
 DESCRIPTION=Simple Live EBUILD for Gentoo-changelog-tracker
 EAPI=7
 HOMEPAGE=https://github.com/lqp1/gentoo-changelog-tracker
-INHERIT=go-module git-r3
+INHERIT=go-module git-r3 bash-completion-r1
 LICENSE=GPL-3
 PROPERTIES=live
 RDEPEND=app-portage/eix
 RESTRICT=strip
 SLOT=0
-_eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	6001248ef162a5fa2a21ce132a212f6b	multilib	5ca4e49abed8e3a2f7b56920eadee157	go-module	f9700c7efec1fd4955363169e9930c1c	git-r3	c57c50c922e121043788de0b40ada60a
-_md5_=63613f4bc03a7e5a5818bc6757d88b34
+_eclasses_=multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	288c54efeb5e2aa70775e39032695ad4	go-env	14f8f70fe58c14d7ab44fff15a05ac47	go-module	83fd3ed1657cfc316c93d6a37018290d	git-r3	fbb2889c81f3a05910c1524db69425c1	bash-completion-r1	f5e7a020fd9c741740756aac61bf75ff
+_md5_=2a272824e246cef2e19077801ae11e2e
