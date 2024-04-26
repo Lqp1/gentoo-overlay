@@ -14,7 +14,7 @@ jobs:
   gentoo-overlay-lint:
     runs-on: ubuntu-latest
     container:
-      image: gentoo/stage3:systemd-20230320
+      image: gentoo/stage3:latest
       env:
         FEATURES: -ipc-sandbox -network-sandbox -pid-sandbox -sandbox -usersandbox
     steps:
