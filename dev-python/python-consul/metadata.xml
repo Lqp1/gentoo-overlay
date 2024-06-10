@@ -3,6 +3,6 @@
 <pkgmetadata>
     <upstream>
         <remote-id type="github">cablehead/python-consul</remote-id>
-		<remote-id type="pypi">python-consul</remote-id>
+        <remote-id type="pypi">python-consul</remote-id>
     </upstream>
 </pkgmetadata>
