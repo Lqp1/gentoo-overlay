@@ -8,8 +8,6 @@ HOMEPAGE="https://github.com/lqp1/smount"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS=""
-IUSE=""
 
 DEPEND="dev-python/pyyaml"
 RDEPEND="${DEPEND}"
@@ -18,13 +16,12 @@ BDEPEND="
 	test? ( dev-python/pyfakefs )
 	"
 
-SRC_URI=""
 EGIT_REPO_URI="https://github.com/lqp1/${PN}.git"
 EGIT_BRANCH="main"
 EGIT_CHECKOUT_DIR="${S}"
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{9,10,11} )
+PYTHON_COMPAT=( python3_{9,10,11,12,13} )
 
 inherit git-r3 distutils-r1
 
